@@ -9,7 +9,6 @@ public class weightConversionProgram {
 
         System.out.println("Mike's Java Weight Conversion Program");
         System.out.println("*************************************");
-        System.out.println("Please select an option: ");
 
         // VARIABLES
 
@@ -18,6 +17,8 @@ public class weightConversionProgram {
         int option;
 
         // OPTIONS
+
+        System.out.println("Please select an option: ");
 
         System.out.println("Option 1 : lbs to kg");
 
