@@ -26,16 +26,20 @@ public class Main {
         num2 = scanner.nextDouble();
         scanner.nextLine();
 
-        if(operation == '+'){
+        OUT: if(operation == '+'){
             result = num1 + num2;
             System.out.println(result);
         }else if(operation == '-'){
             result =  num1 - num2;
             System.out.println(result);
         }else if(operation == '/'){
+            IN: if (num2 == 0) {
+                System.out.println("Cannot divide by zero! Please enter a viable number!");
+                break OUT;
+            }
             result = num1 / num2;
             System.out.println(result);
-        }else if(operation == '*'){
+        }else if(operation == '*') {
             result = num1 * num2;
             System.out.println(result);
         }else{
