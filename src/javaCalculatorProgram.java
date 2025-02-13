@@ -1,11 +1,13 @@
 import java.util.Scanner;
 
-public class Main {
+public class javaCalculatorProgram {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Mike's Java Calculator Program");
+
+        // VARIABLES
 
         double num1;
 
@@ -14,6 +16,8 @@ public class Main {
         char operation;
 
         double result = 0;
+
+        // OUTPUT AND PROMPT REQUEST
 
         System.out.print("Enter the first number: ");
         num1 = scanner.nextDouble();
@@ -25,6 +29,8 @@ public class Main {
         System.out.print("Enter the second number: ");
         num2 = scanner.nextDouble();
         scanner.nextLine();
+
+        // FUNCTIONAL PART
 
         OUT: if(operation == '+'){
             result = num1 + num2;
